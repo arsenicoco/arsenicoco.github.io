@@ -2,13 +2,14 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Podkova:400,700&subset=cyrillic');
 
-$black-normal: #505050;
-$black-bold: $111;
-$black-light: #222;
+$black-normal: #f02081;
+$black-bold: #f02081;
+$black-light: #f02081;
 $grey: #aeb4b9;
 $grey-bold: #777;
 $grey-light: #cacdd0;
 $scooter: #22C5E5;
+$pink: #cfd5c7;
 
 $content-width: 60%;
 
@@ -16,7 +17,7 @@ $content-width: 60%;
 @define-extend a-hover {
   color: $scooter;
   border-bottom: solid 1px RGBA(34, 197, 229, .2);
-  transition: color 100ms linear
+  transition: color 300ms linear
 }
 
 @define-extend hr-base {
@@ -27,9 +28,10 @@ $content-width: 60%;
 
 @define-extend nav-link-base {
   margin-right: 10px;
-  color: $grey-bold;
+  color: $grey;
   padding-bottom: 5px;
   display: inline-block;
+  border-bottom: 1px solid $black-normal;
 }
 
 
@@ -39,6 +41,7 @@ body {
   height: 100%;
   position: relative;
   box-sizing: border-box;
+  background-color: $pink;
 }
 b, strong{
   font-weight: 700;
@@ -56,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-size: 16px;
+  background-color: $pink;
 }
 
 
@@ -63,7 +67,7 @@ a {
   color: $black-light;
   /* font-weight: 200; */
   text-decoration: none;
-  border-bottom: solid 1px #eee;
+  border-bottom: solid 1px $grey;
   transition: color 250ms linear;
   cursor: pointer;
 }
@@ -79,6 +83,7 @@ em {
 
 .footer {
   box-sizing: border-box;
+  background-color: $pink;
 }
 
 .home-footer {
@@ -89,6 +94,7 @@ em {
   width: $content-width;
   margin: 0 auto;
   padding: 50px 0;
+  background-color: $pink;
   hr {
     @extend hr-base;
   }
@@ -101,13 +107,13 @@ em {
 
 .container {
   width: 100%;
+  background-color: $pink;
 }
 
 .copyright, .footer-content {
   text-align: center;
   width: 100%;
   font-size: 80%;
-  color: $grey-light;
   /* opacity: .6; */
   li {
     display: inline-block;
@@ -134,7 +140,7 @@ em {
 
 .home {
   font-weight: lighter;
-  color: $black-normal;
+  /*color: $black-normal;*/
   line-height: 1.4;
   text-align: center;
   position: relative;
@@ -204,7 +210,7 @@ em {
   }
 
   .header {
-    font-size: 18px;
+    font-size: 14px;
     .main-nav-link {
       @extend nav-link-base;
     }
@@ -235,7 +241,6 @@ em {
 
   .archive-article-date {
     font-size: 80%;
-    color: $grey-light;
   }
   .archive-article-title {
     font-weight: 200;
@@ -267,7 +272,6 @@ em {
   /* font-size: 16px; */
 
   .header {
-    font-size: 18px;
     padding-top: 50px;
     .main-nav-link {
       @extend nav-link-base;
@@ -314,6 +318,7 @@ em {
         text-align: center;
         font-size: 80%;
         color: $grey;
+        background-color: $pink;
         cite {
           font-style: italic;
           &:before {
@@ -618,6 +623,7 @@ pre {
   .archive-container {
     .archive-footer, .post-footer {
       padding: 40px;
+      background-color: $pink;
     }
 
     .archive-article-header {
@@ -642,16 +648,19 @@ pre {
   .archive-container {
     .archive-footer, .post-footer {
       padding: 30px;
+      background-color: $pink;
     }
   }
 
   .footer,
   .footer-content {
     font-size: 100%;
+    background-color: $pink;
   }
 
   .archive-footer, .post-footer {
     width: $mobile-content-width;
+    background-color: $pink;
   }
 
   .home {
