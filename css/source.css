@@ -68,10 +68,7 @@ a, a:visited,a:hover,a:active{
   position:relative;
   transition:0.5s color ease;
   text-decoration:none;
-  color:#81b3d2;
-}
-a:hover{
-  color:#d73444;
+  color:$black-normal;
 }
 a:before,a:after{
   content: "";
@@ -87,7 +84,7 @@ a:before,a:after{
   height:2px;
   height:0.15rem;
   width:0;
-  background:#d73444;
+  background:$black-normal;
 }
 a:after{
   left:0;
@@ -103,7 +100,6 @@ em {
 
 .footer {
   box-sizing: border-box;
-  background-color: $pink;
 }
 
 .home-footer {
@@ -174,7 +170,7 @@ em {
 
   h1,
   strong {
-    color: $black-light;
+    color: $black-normal;
   }
 
   hr {
@@ -627,7 +623,7 @@ pre {
   }
 
   .home {
-    color: $black-light;
+    color: $black-normal;
     a {
       color: $black-bold;
     }
