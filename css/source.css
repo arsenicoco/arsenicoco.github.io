@@ -16,8 +16,6 @@ $content-width: 60%;
 
 @define-extend a-hover {
   color: $scooter;
-  border-bottom: solid 1px RGBA(34, 197, 229, .2);
-  transition: color 300ms linear
 }
 
 @define-extend hr-base {
@@ -63,17 +61,39 @@ body {
 }
 
 
-a {
-  color: $black-light;
-  /* font-weight: 200; */
-  text-decoration: none;
-  border-bottom: solid 1px $grey;
-  transition: color 250ms linear;
-  cursor: pointer;
+
+a, a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:relative;
+  transition:0.5s color ease;
+  text-decoration:none;
+  color:#81b3d2;
 }
-a:hover {
-  text-decoration: none;
-  @extend a-hover;
+a:hover{
+  color:#d73444;
+}
+a:before,a:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a:after{
+  bottom:-0.15em;
+}
+a:before,a:after{
+  height:2px;
+  height:0.15rem;
+  width:0;
+  background:#d73444;
+}
+a:after{
+  left:0;
+}
+a:hover:after{
+  width:100%;
 }
 
 em {
@@ -329,9 +349,6 @@ em {
             color: $grey;
             border-bottom: 1px solid #eee;
             transition: color 250ms linear;
-            &:hover {
-              @extend a-hover;
-            }
           }
         }
         strong {
@@ -385,10 +402,6 @@ em {
     box-sizing: border-box;
     vertical-align: top;
     border: 0;
-    &:hover {
-      @extend a-hover;
-      border-bottom: 0;
-    }
     strong {
       color: $grey-bold;
     }
