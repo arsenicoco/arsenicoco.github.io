@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/arseniy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://cllbrtn.com
+  * I am arseniy (https://keybase.io/arseniy) on keybase.
+  * I have a public key ASC5gp4Njf60m7snKi3zSFS6jO1SvbyOh8ujYTUIeN3GuQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c71173d212419023e6e279eb727b3b4e4b6b8860d0f06cd2bbf50cfce1e664240a",
+      "host": "keybase.io",
+      "kid": "0120b9829e0d8dfeb49bbb272a2df34854ba8ced52bdbc8e87cba361350878ddc6b90a",
+      "uid": "59f0815980f3d3bf8958a89a654dda19",
+      "username": "arseniy"
+    },
+    "merkle_root": {
+      "ctime": 1518778939,
+      "hash": "68fa1d23c8ee222ecf85438b9a96e43fd6fe3b0305f78e0745478bf1165a8a7a594e120c74a4e2f49a746c0a85aa741fa3885658a1f2fa5b531573f93b05af43",
+      "hash_meta": "9624ceb18bdba1de9cdc76fab11a96c4ac89dbe9408f06c96ac84d5b41e04b73",
+      "seqno": 2110950
+    },
+    "service": {
+      "hostname": "cllbrtn.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.40"
+  },
+  "ctime": 1518778955,
+  "expire_in": 504576000,
+  "prev": "5e1c832311c411945329674a10488d7cb520a5bdeeeab0470a367331ce5edd12",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEguYKeDY3+tJu7Jyot80hUuoztUr28jofLo2E1CHjdxrkKp3BheWxvYWTFA0J7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYzcxMTczZDIxMjQxOTAyM2U2ZTI3OWViNzI3YjNiNGU0YjZiODg2MGQwZjA2Y2QyYmJmNTBjZmNlMWU2NjQyNDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYjk4MjllMGQ4ZGZlYjQ5YmJiMjcyYTJkZjM0ODU0YmE4Y2VkNTJiZGJjOGU4N2NiYTM2MTM1MDg3OGRkYzZiOTBhIiwidWlkIjoiNTlmMDgxNTk4MGYzZDNiZjg5NThhODlhNjU0ZGRhMTkiLCJ1c2VybmFtZSI6ImFyc2VuaXkifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTg3Nzg5MzksImhhc2giOiI2OGZhMWQyM2M4ZWUyMjJlY2Y4NTQzOGI5YTk2ZTQzZmQ2ZmUzYjAzMDVmNzhlMDc0NTQ3OGJmMTE2NWE4YTdhNTk0ZTEyMGM3NGE0ZTJmNDlhNzQ2YzBhODVhYTc0MWZhMzg4NTY1OGExZjJmYTViNTMxNTczZjkzYjA1YWY0MyIsImhhc2hfbWV0YSI6Ijk2MjRjZWIxOGJkYmExZGU5Y2RjNzZmYWIxMWE5NmM0YWM4OWRiZTk0MDhmMDZjOTZhYzg0ZDViNDFlMDRiNzMiLCJzZXFubyI6MjExMDk1MH0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJjbGxicnRuLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuNDAifSwiY3RpbWUiOjE1MTg3Nzg5NTUsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiNWUxYzgzMjMxMWM0MTE5NDUzMjk2NzRhMTA0ODhkN2NiNTIwYTViZGVlZWFiMDQ3MGEzNjczMzFjZTVlZGQxMiIsInNlcW5vIjoyOSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEB9tjcPJ//SJ1RtPh9ofDhZPl+GiWKxTtvV2SRlEbyfYmie6WGlUaGVs8Fu9hig1Va29Kleu3/8AHZS9rVXg/oEqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgUpb7/BqTUf+7yzSHDnG3NS5HtlPgES5CjEfPm+R0+FWjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/arseniy
+
+==================================================================
