@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Cllbrtn">
 <meta property="og:description" content="Honestly, I got triggered. So much ado about one single concept. I’ve stumbled upon this article, titled “How APIs overcome the challenges of digital transformation”. It speaks about digital transform">
 <meta property="og:locale" content="EN">
-<meta property="og:updated_time" content="2020-02-26T10:34:54.477Z">
+<meta property="og:updated_time" content="2020-02-26T13:22:41.336Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Microservices-shmicroservices">
 <meta name="twitter:description" content="Honestly, I got triggered. So much ado about one single concept. I’ve stumbled upon this article, titled “How APIs overcome the challenges of digital transformation”. It speaks about digital transform">
@@ -67,12 +67,31 @@
       
         <p>Honestly, I got triggered. So much ado about one single concept. I’ve stumbled upon this article, titled “How APIs overcome the challenges of digital transformation”. It speaks about digital transformation in banking, and how APIs actually make that transformation happen.</p>
 <h3 id="Why-digital-transofrmation-matters">Why digital transofrmation matters</h3>
-<p>Yes, we want to digitize and automate as much as possible, because, wow, we have computers now. However, some pieces of the the world trade, sometimes extremely huge pieces are still operating with the technology that was invented in the end of 19th century <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>.</p>
-<p>Indeed, asset management industry does still operate with oldschool fax machines, sending faxes (thank God, digitally now) on every order confirmation and settlement.</p>
+<p>Yes, we want to digitize and automate as much as possible, because, wow, we have computers now. However, some significant pieces of the world trade, sometimes extremely huge pieces, are still operating with the technology that was invented in the end of 19th century <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>.</p>
+<p>Indeed, asset management industry is still sending faxes (thank God, digitally now) on every order confirmation and settlement. When we launched Pritle back in 2016, we made approximately 15 thousand transactions selling our clients old portfolios, and allocating them into new better portfolios. Imagine how surprised we were, when in a few days we received by post some 20 boxes of paper confirmations from the fundhouses. Some of the orders were for less money than printing and sending those confirmations would cost.</p>
+<p>So, that is one of the many reasons to <strong>digitalize</strong> everyting. Get rid of paper, do things faster and with less errors. However, the whole process of digitalisation is driven by people who hardly understand intricacies of all the massive legacy systems which are there, and those who do understand that, are not usually involved in the process.</p>
+<p>If you come to any financial technology conference with C-level executives, how many times will you hear words like <em>digital</em>, <em>distruption</em>, <em>breaking silos</em>, <em>self-organisation</em>, <em>agile</em>, <em>multi-cloud</em>, <em>innovation lab</em> and so on and so forth.</p>
+<p>So how come if the awareness if there, and the wish is there, and everyone has heard the buzzwords, things are not moving as fast as they should? How come things are not becoming digital?</p>
+<h3 id="Why-things-don’t-move-fast-enough">Why things don’t move fast enough</h3>
+<p>The key reason for the above is the disconnect between the general management of companies (for example, banks), and the IT organisations. Patrick Lencioni in <em>The Five Dysfunctions of a Team</em> <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> stipulates that the manager should not be a better engineer even if he is leading engineers. He should just be a good manager. And this is absolutely true for most of the companies. However, not for those, where a dramatic change is needed. And digital transformation is exactly that magnitude of change.</p>
+<p>Can you imagine a problem like this in Facebook? Zuckerberg may be a lizard, but he is an engineer lizard. Meaning, he looks at things as an engineer. And if there’s a need for a large technological change, the organisation will need to adapt to it. A new programming language, new deployment targets, new testing approaches.</p>
+<p>Now imagine such a problem in a bank led by a conventional banker. The classical call would be - get me Director of IT. Now, dear Director of IT, you need to transform to digital. And the poor Director of IT takes this wish to his teams, and they together start building software (and this is a good outcome. In the bad outcome he will start buying something - consulting, software, solutions). Because that is the problem pricesily, right? Also, because engineers are not good in dealing with customers <sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>, they’re not allowed to ask why’s four times, and realize what is the real goal and the real problem.</p>
+<h3 id="So-what">So what?</h3>
+<p>Basically, a few things:</p>
+<ol>
+<li>Engineers need to be able to make decisions and prioritize work. This may sound counter-intuitive, but they know better, what is the biggest point of pain, because they do know what is not automated and why - too expensive, too difficilt, too old, not needed?</li>
+<li>Microservices and mesh architectures do not solve your digital transofrmation problems. You do not need APIs to run a fully digital bank. You don’t need containers to run a fully digital bank. Maybe your best bet is kill all legacy and go to a BaaS provider? And even then, your organisation is to blame, not technology. Conway’s law says it dicrectly: you will build systems to reflect your organisation. So if you want to change things - change the organisation first. Break down legal and compliance, marketing, sales, customer service, risk, all your traditional departments. Now put them together on the basis of the products together with your IT people. And only then start working on services, or microservices, or any other services.</li>
+<li>Yes, in order to achieve the above you do need the foundation - work out your automated testing, CI/CD, deployment streets, code quality. Then change your organisation, and only then start murmurring the magic microservices thing. If the new <strong>self-organised organisation actually advises you to do that</strong>.</li>
+</ol>
+<p>Now you’re probably achieving something. You’re welcome.</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
 <li id="fn1" class="footnote-item"><p><a href="https://en.wikipedia.org/wiki/Fax#Wire_transmission" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Fax#Wire_transmission</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="https://www.amazon.co.uk/Five-Dysfunctions-Team-Leadership-Lencioni/dp/0787960756" target="_blank" rel="noopener">https://www.amazon.co.uk/Five-Dysfunctions-Team-Leadership-Lencioni/dp/0787960756</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><a href="https://www.youtube.com/watch?v=hNuu9CpdjIo" target="_blank" rel="noopener">https://www.youtube.com/watch?v=hNuu9CpdjIo</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>
