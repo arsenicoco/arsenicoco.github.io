@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
-  <title>Microservices-shmicroservices | Cllbrtn</title>
+  <title>Microservices-shmicroservices | Personal blog of Arseniy Korobchenko</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Honestly, I got triggered. So much ado about one single concept. I’ve stumbled upon this article, titled “How APIs overcome the challenges of digital transformation”. It speaks about digital transform">
-<meta name="keywords" content="fintech,banking,software">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Microservices-shmicroservices">
 <meta property="og:url" content="http://cllbrtn.com/2020/02/23/Microservices-shmicroservices/index.html">
-<meta property="og:site_name" content="Cllbrtn">
+<meta property="og:site_name" content="Personal blog of Arseniy Korobchenko">
 <meta property="og:description" content="Honestly, I got triggered. So much ado about one single concept. I’ve stumbled upon this article, titled “How APIs overcome the challenges of digital transformation”. It speaks about digital transform">
-<meta property="og:locale" content="EN">
-<meta property="og:updated_time" content="2020-02-26T13:22:41.336Z">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-02-23T19:12:02.000Z">
+<meta property="article:modified_time" content="2020-02-26T13:22:41.000Z">
+<meta property="article:author" content="Arseniy Korobchenko">
+<meta property="article:tag" content="banking">
+<meta property="article:tag" content="software">
+<meta property="article:tag" content="fintech">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Microservices-shmicroservices">
-<meta name="twitter:description" content="Honestly, I got triggered. So much ado about one single concept. I’ve stumbled upon this article, titled “How APIs overcome the challenges of digital transformation”. It speaks about digital transform">
 <meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;krbchnk">
   
-    <link rel="alternate" href="/atom.xml" title="Cllbrtn" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Personal blog of Arseniy Korobchenko" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.ico">
   
-  <link rel="stylesheet" href="/css/typing.css">
-</head>
-</html>
+  
+<link rel="stylesheet" href="/css/typing.css">
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
   
     <body>
   
@@ -49,7 +53,7 @@
   </nav>
 </header>
 
-  <hr>
+  <hr/>
   <div class="article-inner">
     
     
@@ -67,15 +71,16 @@
       
         <p>Honestly, I got triggered. So much ado about one single concept. I’ve stumbled upon this article, titled “How APIs overcome the challenges of digital transformation”. It speaks about digital transformation in banking, and how APIs actually make that transformation happen.</p>
 <h3 id="Why-digital-transofrmation-matters">Why digital transofrmation matters</h3>
-<p>Yes, we want to digitize and automate as much as possible, because, wow, we have computers now. However, some significant pieces of the world trade, sometimes extremely huge pieces, are still operating with the technology that was invented in the end of 19th century <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>.</p>
+<p>Yes, we want to digitize and automate as much as possible, because, wow, we have computers now. However, some significant pieces of the world trade, sometimes extremely huge pieces, are still operating with the technology that was invented in the end of 19th century [^1].<br>
+[^1]: <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Fax#Wire_transmission">https://en.wikipedia.org/wiki/Fax#Wire_transmission</a></p>
 <p>Indeed, asset management industry is still sending faxes (thank God, digitally now) on every order confirmation and settlement. When we launched Pritle back in 2016, we made approximately 15 thousand transactions selling our clients old portfolios, and allocating them into new better portfolios. Imagine how surprised we were, when in a few days we received by post some 20 boxes of paper confirmations from the fundhouses. Some of the orders were for less money than printing and sending those confirmations would cost.</p>
 <p>So, that is one of the many reasons to <strong>digitalize</strong> everyting. Get rid of paper, do things faster and with less errors. However, the whole process of digitalisation is driven by people who hardly understand intricacies of all the massive legacy systems which are there, and those who do understand that, are not usually involved in the process.</p>
 <p>If you come to any financial technology conference with C-level executives, how many times will you hear words like <em>digital</em>, <em>distruption</em>, <em>breaking silos</em>, <em>self-organisation</em>, <em>agile</em>, <em>multi-cloud</em>, <em>innovation lab</em> and so on and so forth.</p>
 <p>So how come if the awareness if there, and the wish is there, and everyone has heard the buzzwords, things are not moving as fast as they should? How come things are not becoming digital?</p>
 <h3 id="Why-things-don’t-move-fast-enough">Why things don’t move fast enough</h3>
-<p>The key reason for the above is the disconnect between the general management of companies (for example, banks), and the IT organisations. Patrick Lencioni in <em>The Five Dysfunctions of a Team</em> <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> stipulates that the manager should not be a better engineer even if he is leading engineers. He should just be a good manager. And this is absolutely true for most of the companies. However, not for those, where a dramatic change is needed. And digital transformation is exactly that magnitude of change.</p>
+<p>The key reason for the above is the disconnect between the general management of companies (for example, banks), and the IT organisations. Patrick Lencioni in <em>The Five Dysfunctions of a Team</em> <a target="_blank" rel="noopener" href="https://www.amazon.co.uk/Five-Dysfunctions-Team-Leadership-Lencioni/dp/0787960756">^2</a> stipulates that the manager should not be a better engineer even if he is leading engineers. He should just be a good manager. And this is absolutely true for most of the companies. However, not for those, where a dramatic change is needed. And digital transformation is exactly that magnitude of change.</p>
 <p>Can you imagine a problem like this in Facebook? Zuckerberg may be a lizard, but he is an engineer lizard. Meaning, he looks at things as an engineer. And if there’s a need for a large technological change, the organisation will need to adapt to it. A new programming language, new deployment targets, new testing approaches.</p>
-<p>Now imagine such a problem in a bank led by a conventional banker. The classical call would be - get me Director of IT. Now, dear Director of IT, you need to transform to digital. And the poor Director of IT takes this wish to his teams, and they together start building software (and this is a good outcome. In the bad outcome he will start buying something - consulting, software, solutions). Because that is the problem pricesily, right? Also, because engineers are not good in dealing with customers <sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>, they’re not allowed to ask why’s four times, and realize what is the real goal and the real problem.</p>
+<p>Now imagine such a problem in a bank led by a conventional banker. The classical call would be - get me Director of IT. Now, dear Director of IT, you need to transform to digital. And the poor Director of IT takes this wish to his teams, and they together start building software (and this is a good outcome. In the bad outcome he will start buying something - consulting, software, solutions). Because that is the problem pricesily, right? Also, because engineers are not good in dealing with customers <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=hNuu9CpdjIo">^3</a>, they’re not allowed to ask why’s four times, and realize what is the real goal and the real problem.</p>
 <h3 id="So-what">So what?</h3>
 <p>Basically, a few things:</p>
 <ol>
@@ -84,17 +89,6 @@
 <li>Yes, in order to achieve the above you do need the foundation - work out your automated testing, CI/CD, deployment streets, code quality. Then change your organisation, and only then start murmurring the magic microservices thing. If the new <strong>self-organised organisation actually advises you to do that</strong>.</li>
 </ol>
 <p>Now you’re probably achieving something. You’re welcome.</p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p><a href="https://en.wikipedia.org/wiki/Fax#Wire_transmission" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Fax#Wire_transmission</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p><a href="https://www.amazon.co.uk/Five-Dysfunctions-Team-Leadership-Lencioni/dp/0787960756" target="_blank" rel="noopener">https://www.amazon.co.uk/Five-Dysfunctions-Team-Leadership-Lencioni/dp/0787960756</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn3" class="footnote-item"><p><a href="https://www.youtube.com/watch?v=hNuu9CpdjIo" target="_blank" rel="noopener">https://www.youtube.com/watch?v=hNuu9CpdjIo</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
 
       
     </div>
@@ -112,12 +106,12 @@
           <li>
             <span class="label">Tag:</span>
             
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/banking/">banking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fintech/">fintech</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/banking/" rel="tag">banking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fintech/" rel="tag">fintech</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/" rel="tag">software</a></li></ul>
 
 
           </li>
         
-        <hr>
+        <hr/>
       </ul>
     </footer>
   </div>
@@ -125,7 +119,14 @@
     
 <nav id="article-nav" class="article-nav">
   
-    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
+    <a href="/2022/01/25/How-I-got-off-social-media-for-8-weeks-and-didn-t-die/" id="article-nav-newer" class="article-nav-link-wrap newer">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          How I got off social media for 8 weeks and didn&#39;t die
+        
+      </div>
+    </a>
   
   
     <a href="/2020/02/10/Changing-behaviors/" id="article-nav-older" class="article-nav-link-wrap older">
@@ -145,7 +146,7 @@
       </div>
       
     <footer id="footer" class="post-footer footer">
-      <hr>
+      <hr/>
       <div id="footerContent" class="footer-content">
         <p>If you have any comments, do not hesitate to Telegram me</p>
 
@@ -158,11 +159,17 @@
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/typing.js"></script>
+
 <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
 
 
