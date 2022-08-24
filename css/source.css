@@ -1,7 +1,6 @@
 @import 'typo.css';
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Rubik+Mono+One&display=swap');
 
 $black-normal: #68009b;
 $black-bold: #68009b;
@@ -12,7 +11,7 @@ $grey-light: #cacdd0;
 $scooter: #194e4c;
 $pink: #E6E6E6;
 
-$content-width: 60%;
+$content-width: 75%;
 
 
 @define-extend a-hover {
@@ -48,16 +47,16 @@ b, strong{
 body, h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Montserrat', source sans pro, proxima nova, -apple-system, sans-serif;
+  font-family: 'Jost', source sans pro, proxima nova, -apple-system, sans-serif;
   -moz-font-feature-settings: "liga" on;
   transition: all 250ms ease;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family:'Jost', sans-serif;
+  font-family:'Rubik Mono One', sans-serif;
 }
 
 body {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8em;
   background-color: $pink;
 }
@@ -213,7 +212,6 @@ em {
   position: relative;
   line-height: 1;
   text-align: left;
-  font-size: 19px;
   padding-top: 50px;
 
   article {
@@ -228,7 +226,6 @@ em {
   }
 
   .header {
-    font-size: 14px;
     .main-nav-link {
       @extend nav-link-base;
     }
@@ -258,7 +255,7 @@ em {
 
 
   .archive-article-date {
-    font-size: 70%;
+    font-size: 80%;
   }
   .archive-article-title {
     font-weight: 200;
@@ -309,7 +306,7 @@ em {
   }
 
   .article-title {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 
   a.fancybox,
@@ -689,4 +686,11 @@ pre {
   .comments {
     width: $mobile-content-width;
   }
+}
+/* overrides for typo.css */
+h3 {
+  font-size:1.3em!important;
+}
+h4 {
+  font-size:1.2em!important;
 }
