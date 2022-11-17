@@ -93,12 +93,12 @@ Graduated from St.Petersburg State University, built software all my life in all
     </article>
   </div>
   <div class="post-footer">
-    <a href="javascript:window.history.back();">
+    <!-- <a href="javascript:window.history.back();">
       cd ..
     </a>
-    <br>
+    <br> -->
     <a href="/">
-      cd /
+      Go back
     </a>
   </div>
   <div class="post-license">
@@ -118,7 +118,7 @@ Graduated from St.Petersburg State University, built software all my life in all
     </main>
     <footer class="footer">
   <div class="copyright">
-    <span>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank">Maple</a></span>
+    <span>Personal blog of Arseniy Korobchenko powered by <a href="https://hexo.io" target="_blank">Hexo</a> & slightly tweaked <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank">Maple</a></span>
   </div>
 </footer>
 
@@ -271,6 +271,20 @@ Graduated from St.Petersburg State University, built software all my life in all
 
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
 
 
 

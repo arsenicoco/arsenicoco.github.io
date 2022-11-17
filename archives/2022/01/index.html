@@ -20,7 +20,7 @@
 
 
 
-<title>Archiv: 2022/1 | Personal blog of Arseniy Korobchenko</title>
+<title>Archivos: 2022/1 | Personal blog of Arseniy Korobchenko</title>
 
 
 
@@ -97,7 +97,7 @@
     </main>
     <footer class="footer">
   <div class="copyright">
-    <span>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank">Maple</a></span>
+    <span>Personal blog of Arseniy Korobchenko powered by <a href="https://hexo.io" target="_blank">Hexo</a> & slightly tweaked <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank">Maple</a></span>
   </div>
 </footer>
 
@@ -250,6 +250,20 @@
 
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
 
 
 
