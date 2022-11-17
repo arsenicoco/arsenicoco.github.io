@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="author" content="Arseniy Korobchenko">
+
+
+  <meta name="subtitle" content="is for collaboration">
+
+
+  <meta name="description" content="Personal blog">
+
+
+
+<title>Elon Musk and The Chamber of Secrets | Personal blog of Arseniy Korobchenko</title>
+
+
+
+    <link rel="icon" href="/favicon.png">
+
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="/lib/tocbot/tocbot.css">
+
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.min.css">
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+<body>
+  <div id="app">
+    <header class="header">
+  <a href="/" class="logo" focusable="false">
+    <img src="/images/favicon.png" alt="Personal blog of Arseniy Korobchenko" />
+  </a>
+  <nav class="nav">
+    <div class="spacer"></div>
+    <div class="right">
+      <div class="menu">
+        
+          <a class="item" href="/archives">Posts</a>
+          
+      </div>
+      <div class="links">
+        
+          
+            <a title="Twitter" target="_blank" rel="noopener" href="https://twitter.com/krbchnk" class="link-item">
+              <span class="iconify" data-icon="ri:twitter-line"></span>
+            </a>
+          
+        
+      </div>
+      <a class="toggleDark" id="dark-mode">
+        <span class="iconify" data-icon="ri:sun-line" id="sun-icon" style="display: none"></span>
+        <span class="iconify" data-icon="ri:moon-line" id="moon-icon" style="display: none"></span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+    <main class="container">
+      
+
+<div class="post">
+  <div class="post-header">
+    <h1 class="post-title">Elon Musk and The Chamber of Secrets</h1>
+    <p class="post-meta">2022-11-16 11:18:04</p>
+  </div>
+  <div class="post-content">
+    <article>
+      <p>Latest from Elon: micromanagement and firing Twitter engineers. Some of them in random batches of thousands, some of them after engaging in technical discussions over Twitter.</p>
+<img src="/images/twitter_Fhi2y-TWAAEIvmd.jpg" width="50%">
+<p>Elon launched spaceships and built electric cars, respect for that. But his management style (as well as his directors style – looking at you as a Tesla shareholder) is probably tiny bit questionable.</p>
+<p>I mean, he is absolutely right that it is <strong>much</strong> better to have a high-performing team of 150 engineers, than a less-performing team of 3000 engineers. First of all, it is cheaper. However, there’re a few secrets he would need to uncover, when entering Twitter “chamber of secrets”.</p>
+<p>One of those is a pretty obvious for an architect.</p>
+<p>Web platforms unlike systems, which don’t have to scale through distribution, actually introduce tradeoffs. And the amount of those tradeoffs only grows with the size of the platforms.</p>
+<p>One of the tradeoffs has to do with load. In pretty traditional analogies (thanks, <a target="_blank" rel="noopener" href="https://www.enterpriseintegrationpatterns.com/ramblings/18_starbucks.html">Gregor Hohpe</a>), if you’re running a coffee shop, a large number of people queuing up to pay for coffee should not affect the speed of coffee preparation. So this means, that if your place is really popular, you cannot have one person accepting payments and making coffee. Those things should happen in parallel, and this means that you need more people to build and support those services.</p>
+<p>In architectural terms, it is necessary to distribute functionality among different services to ensure scalability and availability of those functionalities. Think about an authentication vs message feed. Or, even more granular: password authentication vs second factor authentication (not all users will have the latter enabled). And the more load the system expects, the smaller and more granular those functionalities should be mapped to services.</p>
+<p>But why does Twitter have so “many” engineers? One of the questions Elon could ask. And the simple answer to that would be – scale and the way modern architectures work.</p>
+<p>So the higher the load (bigger the scale), the more functional services there should be. The more functional services there are, the more people you need to support and maintain them. The more people you need, the more you have to make to pay them. Twitter was making around $677K/employee in 2021, which is 50% lower than high-performing internet companies.</p>
+<p>Can you fire half of Twitter engineers? You can. Who’s going to be supporting all of that architecture is the biggest question.</p>
+<p>It all comes down to the major secret, which Elon needs to uncover. And it is not how to re-engineer things, but rather how to create more revenue flows to support existing architecture.</p>
+<p>Or re-architect things completely to make sure that all of Twitter runs from an infinitely-scalable single machine, which can be supported by a small bunch of engineers.</p>
+
+    </article>
+  </div>
+  <div class="post-footer">
+    <!-- <a href="javascript:window.history.back();">
+      cd ..
+    </a>
+    <br> -->
+    <a href="/">
+      Go back
+    </a>
+  </div>
+  <div class="post-license">
+    <span>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color: inherit;">
+        CC BY-NC-SA 4.0
+      </a>
+      2021-PRESENT © Arseniy Korobchenko
+    </span>
+    <div></div>
+  </div>
+  <div class="post-comment">
+    <div id="disqusjs"></div>
+  </div>
+</div>
+
+    </main>
+    <footer class="footer">
+  <div class="copyright">
+    <span>Personal blog of Arseniy Korobchenko powered by <a href="https://hexo.io" target="_blank">Hexo</a> & slightly tweaked <a href="https://github.com/xbmlz/hexo-theme-maple" target="_blank">Maple</a></span>
+  </div>
+</footer>
+
+  </div>
+  <script>
+  (function() {
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    const setting = localStorage.getItem('hexo-color-scheme') || 'auto'
+    if (setting === 'dark' || (prefersDark && setting !== 'light'))
+      document.documentElement.classList.toggle('dark', true)
+  })()
+</script>
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/index.js"></script>
+
+
+
+<script src="/js/iconify.min.js"></script>
+
+
+<script>
+  window.onload = () => {
+    let media = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)')
+    let isDark = () => {
+      const setting = localStorage.getItem('hexo-color-scheme') || 'auto'
+      if (setting === 'dark' || (media.matches && setting !== 'light')) {
+        return true
+      } else{
+        return false
+      }
+    }
+    // 切换为深色模式
+    let toggleDarkMode = () => {
+      document.documentElement.classList.toggle('dark', true)
+      document.getElementById('moon-icon').style.display = 'block'
+      document.getElementById('sun-icon').style.display = 'none'
+      setDarkMode('dark')
+    }
+    // 切换为浅色模式
+    let toggleLightMode = () => {
+      document.documentElement.classList.toggle('dark', false)
+      document.getElementById('moon-icon').style.display = 'none'
+      document.getElementById('sun-icon').style.display = 'block'
+      setDarkMode('light')
+    }
+    let setDarkMode = (scheme) => {
+      const darkMode = media.matches ? 'dark' : 'light'
+      if (darkMode !== scheme) {
+        localStorage.setItem('hexo-color-scheme', scheme)
+      } else{
+        localStorage.setItem('hexo-color-scheme', 'auto')
+      }
+    }
+    // 切换为自动模式
+    let updateMode = (e) => {
+      const setting = localStorage.getItem('hexo-color-scheme') || 'auto'
+      console.log(setting, e.matches)
+      if (setting === 'auto') {
+        if (e.matches) {
+          toggleDarkMode()
+        } else {
+          toggleLightMode()
+        }
+      }
+    }
+
+    // let media = getMedia()
+    if (typeof media.addEventListener === 'function') {
+      media.addEventListener('change', updateMode)
+    } else if (typeof media.addListener === 'function') {
+      media.addListener(updateMode)
+    }
+
+    if (isDark()) {
+      document.getElementById('moon-icon').style.display = 'block'
+    } else {
+      document.getElementById('sun-icon').style.display = 'block'
+    }
+
+    document.getElementById('moon-icon').addEventListener('click', () => {
+      toggleLightMode()
+    })
+    document.getElementById('sun-icon').addEventListener('click', () => {
+      toggleDarkMode()
+    })
+  }
+</script>
+
+
+
+<script src="/lib/tocbot/tocbot.min.js"></script>
+
+<script>
+  var tocbot_timer;
+  var DEPTH_MAX = 6; // 为 6 时展开所有
+  var tocbot_default_config = {
+    tocSelector: '.tocbot-list',
+    contentSelector: '.post-content',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    orderedList: false,
+    scrollSmooth: true,
+    onClick: extend_click,
+  };
+  function extend_click() {
+    clearTimeout(tocbot_timer);
+    tocbot_timer = setTimeout(function () {
+      tocbot.refresh(obj_merge(tocbot_default_config, {
+        hasInnerContainers: true
+      }));
+    }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+  }
+  function expand_toc() {
+    var b = document.querySelector('.tocbot-toc-expand');
+    var expanded = b.getAttribute('data-expanded');
+    expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+    tocbot.refresh(obj_merge(tocbot_default_config, {
+      collapseDepth: expanded ? 1 : DEPTH_MAX
+    }));
+    b.innerText = expanded ? 'Expand all' : 'Collapse all';
+  }
+  function go_top() {
+    window.scrollTo(0, 0);
+  }
+  function go_bottom() {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+  function obj_merge(target, source) {
+    for (var item in source) {
+      if (source.hasOwnProperty(item)) {
+        target[item] = source[item];
+      }
+    }
+    return target;
+  }
+  $(document).ready(() => {
+    tocbot.init(obj_merge(tocbot_default_config, {
+      collapseDepth: 1
+    }));
+  });
+</script>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(document).ready(() => {
+    const maraidConfig = {
+      theme: "default",
+      logLevel: 3,
+      flowchart: { curve: "linear" },
+      gantt: { axisFormat: "%m/%d/%Y" },
+      sequence: { actorMargin: 50 },
+    };
+    mermaid.initialize(maraidConfig);
+  });
+</script>
+
+
+
+
+<script src="/lib/fancybox/fancybox.umd.js"></script>
+
+<script>
+  $(document).ready(() => {
+    $('.post-content').each(function(i){
+      $(this).find('img').each(function(){
+        if ($(this).parent().hasClass('fancybox') || $(this).parent().is('a')) return;
+        var alt = this.alt;
+        if (alt) $(this).after('<span class="fancybox-alt">' + alt + '</span>');
+        $(this).wrap('<a class="fancybox-img" href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
+      });
+      $(this).find('.fancybox').each(function(){
+        $(this).attr('rel', 'article' + i);
+      });
+    });
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // options
+    })
+  })
+</script>
+
+
+
+</body>
+
+</html>
