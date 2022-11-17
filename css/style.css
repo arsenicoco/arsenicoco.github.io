@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap");
 :root {
   --c-bg: #fff;
   --c-scrollbar: #eee;
@@ -20,7 +21,7 @@ html.dark {
 }
 body {
   margin: 0 auto;
-  font-family: "Inter", Inter var, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 * {
   scrollbar-color: var(--c-scrollbar) var(--c-bg);
@@ -70,7 +71,7 @@ hr {
 }
 .post {
   max-width: 80ch;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.75;
   margin: auto;
 }
@@ -588,6 +589,15 @@ hr {
   height: 1.2rem;
   vertical-align: text-bottom;
 }
+.pagination a {
+  color: var(--fg-deep);
+  opacity: 0.5;
+  margin: 0 0.3rem;
+  line-height: 1.75;
+}
+.pagination a:hover {
+  opacity: 0.75;
+}
 .footer {
   height: 4rem;
   width: 100%;
@@ -597,7 +607,6 @@ hr {
 }
 .footer .copyright a {
   color: var(--fg-deep);
-  font-family: Consolas, ui-monospace, SFMono-Regular, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
   opacity: 0.5;
   font-size: 1rem;
   line-height: 1.75;
